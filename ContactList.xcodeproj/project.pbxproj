@@ -16,6 +16,8 @@
 		4825A0402B2B7B700005C894 /* Person.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4825A03F2B2B7B700005C894 /* Person.swift */; };
 		4825A0432B2B7CA30005C894 /* DataStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4825A0422B2B7CA30005C894 /* DataStore.swift */; };
 		486A7FCE2B2DAFB5001C2A3B /* PersonDetailsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A7FCD2B2DAFB5001C2A3B /* PersonDetailsViewController.swift */; };
+		486A7FD02B2DC6C1001C2A3B /* PersonSectionedDetailsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A7FCF2B2DC6C1001C2A3B /* PersonSectionedDetailsVC.swift */; };
+		486A7FD42B2DC88F001C2A3B /* StartScreenTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 486A7FD32B2DC88F001C2A3B /* StartScreenTabBarController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +32,8 @@
 		4825A03F2B2B7B700005C894 /* Person.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Person.swift; sourceTree = "<group>"; };
 		4825A0422B2B7CA30005C894 /* DataStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataStore.swift; sourceTree = "<group>"; };
 		486A7FCD2B2DAFB5001C2A3B /* PersonDetailsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonDetailsViewController.swift; sourceTree = "<group>"; };
+		486A7FCF2B2DC6C1001C2A3B /* PersonSectionedDetailsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersonSectionedDetailsVC.swift; sourceTree = "<group>"; };
+		486A7FD32B2DC88F001C2A3B /* StartScreenTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StartScreenTabBarController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,8 +89,10 @@
 		4825A03D2B2B75740005C894 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				486A7FD32B2DC88F001C2A3B /* StartScreenTabBarController.swift */,
 				4825A02C2B2B75060005C894 /* ContactViewController.swift */,
 				486A7FCD2B2DAFB5001C2A3B /* PersonDetailsViewController.swift */,
+				486A7FCF2B2DC6C1001C2A3B /* PersonSectionedDetailsVC.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -188,10 +194,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				4825A02D2B2B75060005C894 /* ContactViewController.swift in Sources */,
+				486A7FD02B2DC6C1001C2A3B /* PersonSectionedDetailsVC.swift in Sources */,
 				4825A0292B2B75060005C894 /* AppDelegate.swift in Sources */,
 				486A7FCE2B2DAFB5001C2A3B /* PersonDetailsViewController.swift in Sources */,
 				4825A0402B2B7B700005C894 /* Person.swift in Sources */,
 				4825A0432B2B7CA30005C894 /* DataStore.swift in Sources */,
+				486A7FD42B2DC88F001C2A3B /* StartScreenTabBarController.swift in Sources */,
 				4825A02B2B2B75060005C894 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

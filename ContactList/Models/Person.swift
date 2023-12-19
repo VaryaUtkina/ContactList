@@ -15,22 +15,31 @@ struct Person {
         "\(name) \(surname)"
     }
     
-    static func getPerson() -> [Person] {
+    static func getContactList() -> [Person] {
         var people: [Person] = []
-        while people.count < 10 {
+        let dataStore = DataStore.shared
+        
+        let names = dataStore.names.shuffled()
+        let surnames = dataStore.surnames.shuffled()
+        let phoneNumbers = dataStore.phoneNumbers.shuffled()
+        let emails = dataStore.emails.shuffled()
+        
+        let iterationCount = min(
+            names.count,
+            surnames.count,
+            phoneNumbers.count,
+            emails.count
+        )
+        
+        for index in 0..<iterationCount {
             let currentPerson = Person(
-                name: names.randomElement() ?? "",
-                surname: surnames.randomElement() ?? "",
-                phoneNumber: phoneNumbers.randomElement() ?? "",
-                email: emails.randomElement() ?? ""
+                name: names[index],
+                surname: surnames[index],
+                phoneNumber: phoneNumbers[index],
+                email: emails[index]
             )
-            if !people.contains(where: { $0.name == currentPerson.name }),
-               !people.contains(where: { $0.surname == currentPerson.surname }),
-               !people.contains(where: { $0.phoneNumber == currentPerson.phoneNumber }),
-               !people.contains(where: { $0.email == currentPerson.email }) {
                people.append(currentPerson)
             }
-        }
         return people
     }
 }
